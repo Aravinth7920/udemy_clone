@@ -1,0 +1,27 @@
+.container_logo {
+    display: flex;
+    height: 8vh;
+    width: 30%;
+
+
+}
+
+.container_logo li {
+    padding-top: 0px;
+    margin-top: 8px;
+}
+
+.container {
+    display: flex;
+    height: 1hv;
+}
+
+.container_search {
+    padding-top: 0px;
+    margin-top: 8px;
+    width: 30%;
+    height: 8vh;
+    margin-right: 20%;
+
+
+}

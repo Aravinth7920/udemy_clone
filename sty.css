@@ -1,0 +1,403 @@
+body {
+    font-family: "gabrito", sans-serif;
+}
+
+.container {
+    height: 8vh;
+
+    display: flex;
+    align-items: center;
+}
+
+.container_logo {
+    width: 20%;
+    display: flex;
+    margin: 30px;
+}
+
+#udemy {
+    width: 100px;
+    height: 10vh;
+    margin-bottom: 20px;
+}
+
+.container_logo span {
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+.container_search {
+
+    padding: 10px;
+    width: 60%;
+    border: solid 1px black;
+    border-radius: 50px;
+    gap: 10px;
+    align-items: center;
+    
+
+}
+
+.container_search input {
+  width: 80%;
+  border: none;
+  background-color: transparent;
+  text-align:left 20%;
+}
+
+.container_search input:focus{
+    outline: none;
+}
+
+
+
+.container_value {
+    width: 35%;
+    align-items: first baseline;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+.container_value span:hover {
+    color: #a435f0;
+    transition: 0.5s;
+}
+
+
+.container_logo span {
+    padding-top: 0px;
+    margin-top: 20px;
+
+    padding-left: 40px;
+}
+
+
+
+.container_label {
+    width: 30%;
+    display: flex;
+    margin: 2px;
+    justify-content: space-evenly;
+
+}
+
+.container_label button {
+    margin: 10px;
+}
+
+.container_label img {
+    height: 5vh;
+    width: 30px;
+    margin-top: 10px;
+}
+
+
+
+#btn1 {
+    padding: 8px;
+    margin: 8px;
+    height: 60%;
+}
+
+#btn1:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+#btn {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    height: 10%;
+}
+
+#btn:hover {
+    color: black;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.card_description {
+    height: 10px;
+    
+}
+
+
+.card_description h1,
+p {
+    text-decoration: none;
+}
+
+.course {
+    margin: 5px;
+    justify-content: space-around;
+    display: flex;
+    height: 8vh;
+    width: 100%;
+    border-bottom:1px solid black;
+    border-top: 1px solid black;
+}
+
+.heading-box {
+    border: solid transparent 1px;
+    /* Add a transparent border */
+    padding: 5px;
+    /* Space inside each box */
+    background-color: #a435f0;
+    /* Background color of each box */
+    border-radius: 50px;
+    /* Rounded corners (optional) */
+    text-align: center;
+    /* Center the heading text */
+    margin: 10px;
+    /* Margin around the heading box */
+    color: white;
+    /* Text color */
+    transition: background-color 0.5s, border-color 0.5s, color 0.5s;
+    /* Smooth transitions */
+}
+
+.heading-box:hover {
+    background-color: white;
+    /* Change background color on hover */
+    border-color: #a435f0;
+    /* Change border color on hover */
+    color: #a435f0;
+    /* Change text color on hover */
+}
+#card_btn{
+    margin-bottom: 10px;
+}
+#card_btn {
+    background-color: rgb(86, 215, 219);
+    border-radius: 10px;
+    text-align: center;
+    width: fit-content;
+
+}
+
+#card_btn:hover {
+    background-color: rgb(26, 135, 207);
+    transition: 1s;
+    
+
+}
+.sales{
+    height: 70vh;
+    width: 100%;
+    position: relative;
+}
+.card {
+    border: 1px solid #e0bbbb;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 160px;
+    width: 20%;
+    margin: 30px;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    background-color: white;
+    opacity: 0;
+    animation-name: zoom;
+   
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+}
+@keyframes zoom{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.recommend{
+    
+    display: flex ;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    justify-content: space-between;
+
+    /* margin: 5%; */
+    
+
+}
+.card1{
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
+}
+.recommend .card1 img{
+    height: 60%;
+    width: 90%;
+}
+.topics{
+    padding: 10px;
+
+}
+
+.topics__container{
+    display: flex;
+    gap: 5px;
+   
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+.topics__container p{
+    border: solid grey 2px;
+    padding: 10px;
+    flex-grow: 1;
+    flex-basis: 25%;
+    margin: 2px;
+}
+.popular{
+    padding: 10px;
+}
+
+.popular__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.course-card{
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
+}
+   
+ .popular__container img{
+    height: 60%;
+    width: 90%;
+}
+.course-card h3,p{
+    margin: 0;
+    padding: 0;
+}
+.footer{
+    background-color: black;
+    color: white;
+    
+}
+.footer_one,.footer_two{
+    display: flex;
+}
+.footer_h1{
+    margin: 15px;
+    display: block;
+    padding: 10px;
+
+}
+.footer_h1  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Adjust the value to control the gap */
+}
+.footer_h2{
+    margin: 20px;
+    display: block;
+    padding: 10px;
+
+}
+.footer_h2  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Adjust the value to control the gap */
+}
+.footer_two{
+    justify-content: space-between;
+}
+.footer_two h1{
+   margin-left: 100px;
+   margin-bottom: 50px;
+}
+.footer_two p{
+    margin-right: 100px;
+    margin-top: 20px;
+}
+@media screen and (max-width: 800px){
+    body{
+        font-size: 10px;
+    }
+    .recommend{
+       
+        flex-basis: 40%;
+    }
+    .container_search{
+        display: none;
+    }
+    #udemy{
+          height:10vh;
+          width: 50px;
+    }
+    .container_value{
+        width: 30%;
+    }
+    #btn,#btn1{
+        height: 10%;
+        width: 30%;
+    }
+    .topics{
+        height: 10%;
+    }
+    .popular{
+        height: 10%;
+    }
+    .footer{
+        height: 300px;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        font-size: 5px;
+    }
+
+    .recommend{
+        font-size: 10px;
+        flex-basis: 80%;
+        height: 10%;
+    }
+    .container_search{
+        display: none;
+    }
+    #udemy{
+          height:6vh;
+          width: 30px;
+    }
+    .container_value{
+        width: 25%;
+        font-size: 10px;
+        margin-left: 10px;
+    }
+    #btn,#btn1{
+        height: 10%;
+        width: 30%;
+    }
+    .topics{
+        margin-top: 10%;
+        height: 10%;
+        font-size: 10px;
+    }
+    .popular__container{
+        height: 30%;
+        font-size: 10px;
+    }
+    .footer{
+        height: 200px;
+        font-size: 5px;
+        margin-top: 10%;
+    }
+
+}
